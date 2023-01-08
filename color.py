@@ -12,6 +12,8 @@ while True:
 
     #Converting the image from BGR to HSV.
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+    #Defining the color that we want to detect
     lower_blue = np.array([90, 50, 50])
     upper_blue = np.array([130, 255, 255])
 
